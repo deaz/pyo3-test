@@ -13,8 +13,7 @@ impl Class {
 
 #[pymodule]
 fn pyo3_test(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_class::<Class>()?;
-    Ok(())
+    m.add_class::<Class>()
 }
 
 #[cfg(test)]
