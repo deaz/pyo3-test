@@ -1,0 +1,13 @@
+[package]
+name = "pyo3-test"
+version = "0.1.0"
+authors = ["Ivan Vologdin <vologdin.nsk@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "pyo3_test"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.6.0-alpha.2"
+features = ["extension-module"]
